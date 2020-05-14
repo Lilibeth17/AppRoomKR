@@ -1,0 +1,2 @@
+rootProject.name='AppRoomKR'
+include ':app'

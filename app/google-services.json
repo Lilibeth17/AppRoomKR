@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "587311129100",
+    "firebase_url": "https://approomkr.firebaseio.com",
+    "project_id": "approomkr",
+    "storage_bucket": "approomkr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587311129100:android:3cc6731428e7f875624429",
+        "android_client_info": {
+          "package_name": "com.karenreal.approomkr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587311129100-mu0a20742vojvht81rjde8bd1s70mrhl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.karenreal.approomkr",
+            "certificate_hash": "8c65961d9a2de3f1aa25af3fba32cb0fef7a763c"
+          }
+        },
+        {
+          "client_id": "587311129100-9kp7f6r9ns85ajp6v7bu9dkt2kon14b0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByp5SuIiY83j1ZS8BPmCVVrlqS8SlrFSc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "587311129100-9kp7f6r9ns85ajp6v7bu9dkt2kon14b0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

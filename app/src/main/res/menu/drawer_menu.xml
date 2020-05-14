@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Menu">
+        <menu>
+            <item
+                android:id="@+id/home"
+                android:icon="@drawable/home"
+                android:title="MENU">
+
+            </item>
+            <item
+                android:id="@+id/buscar"
+                android:icon="@drawable/buscar"
+                android:title="BUSCAR"></item>
+            <item
+                android:id="@+id/lista"
+                android:icon="@drawable/listapublico"
+                android:title="PÚBLICO"></item>
+            <item
+                android:id="@+id/reserva"
+                android:icon="@drawable/reservas"
+                android:title="RESERVAS">
+
+            </item>
+            <item
+                android:id="@+id/bono"
+                android:icon="@drawable/regalo"
+                android:title="BONO REGALO"></item>
+            <item
+                android:id="@+id/promociones"
+                android:icon="@drawable/promociones"
+                android:title="PROMOCIONES"></item>
+            <item
+                android:id="@+id/quienes"
+                android:icon="@drawable/quienessomos"
+                android:title="QUIENES SOMOS"></item>
+            <item
+                android:id="@+id/contacto"
+                android:icon="@drawable/contacto"
+                android:title="CONTACTO"></item>
+            <item
+                android:id="@+id/compartir"
+                android:icon="@drawable/compartir"
+                android:title="COMPARTIR">
+
+            </item>
+            <item
+                android:id="@+id/cerrarsesion"
+                android:icon="@drawable/cerrarsesion"
+                android:title="CERRAR SESIÓN"></item>
+        </menu>
+    </item>
+</menu>

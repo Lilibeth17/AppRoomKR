@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#B71C1C"
+    app:cardBackgroundColor="#B71C1C"
+    app:cardCornerRadius="3dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_red_dark"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageid"
+            android:layout_width="100dp"
+            android:layout_height="100dp"></de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="0dp"
+            android:layout_toEndOf="@+id/imageid"
+            android:layout_toRightOf="@+id/imageid"
+            android:textColor="#090000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/freckle_face">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/boton_regalo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nombre"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="86dp"
+            android:layout_marginTop="-2dp"
+            android:layout_toRightOf="@+id/imageid"
+            android:background="#0C0606"
+            android:text="BONO REGALO"
+            android:textColor="#B71C1C"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/freckle_face">
+
+        </Button>
+
+        <TextView
+            android:id="@+id/lugarid"
+            android:layout_width="152dp"
+            android:layout_height="33dp"
+            android:layout_alignTop="@+id/boton_regalo"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="23dp"
+            android:layout_toEndOf="@+id/boton_regalo"
+            android:drawableLeft="@drawable/lugar"
+            android:textSize="24sp"
+            app:fontFamily="@font/freckle_face" />
+
+        <TextView
+            android:id="@+id/publicoid"
+            android:layout_width="281dp"
+            android:layout_height="37dp"
+            android:layout_alignEnd="@+id/boton_regalo"
+            android:layout_alignBottom="@+id/boton_regalo"
+            android:layout_marginEnd="-172dp"
+            android:layout_marginBottom="-35dp"
+            android:drawableLeft="@drawable/tipo"
+            android:textColor="#0C0606"
+            android:textSize="20sp"
+            app:fontFamily="@font/freckle_face" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

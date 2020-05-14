@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".Activity_Datos_Reserva">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/freckle_face"
+        android:text="RESERVA"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="50sp"
+        android:textStyle="bold|italic" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="381dp"
+        android:layout_height="511dp"
+        android:layout_margin="10dp"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/freckle_face"
+                android:text="FECHA"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/freckle_face"
+                android:text="TextView"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="89dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40sp"
+                android:layout_weight="1"
+                android:fontFamily="@font/freckle_face"
+                android:text="HORARIO"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40sp"
+                android:layout_weight="1"
+                android:fontFamily="@font/freckle_face"
+                android:text="TextView"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80sp"
+                android:layout_weight="1"
+                android:fontFamily="@font/freckle_face"
+                android:text="RESERVA"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80sp"
+                android:layout_weight="1"
+                android:fontFamily="@font/freckle_face"
+                android:text="TextView"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="160dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/freckle_face"
+                android:text="¿CUÁNTOS INTEGRANTES TIENE EL EQUIPO?"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="155dp"
+                android:layout_marginTop="160dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/freckle_face"
+                android:text="TextView"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="320dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/freckle_face"
+                android:text="NIVEL DE DIFICULTAD"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="320dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/freckle_face"
+                android:text="TextView"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="399dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="420dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/freckle_face"
+                android:text="IVA"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="420dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/freckle_face"
+                android:text="TextView"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="172dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="460dp"
+            android:background="@color/colorAccent"
+            android:fontFamily="@font/freckle_face"
+            android:text="PAGAR"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="36sp" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

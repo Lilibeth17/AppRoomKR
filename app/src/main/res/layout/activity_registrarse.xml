@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_dark">
+
+
+    <EditText
+        android:id="@+id/nomUser"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="29dp"
+        android:drawableLeft="@drawable/persona"
+        android:ems="10"
+        android:hint="USUARIO"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/freckle_face"
+        app:layout_constraintBottom_toTopOf="@+id/correo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/correo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="9dp"
+        android:drawableLeft="@drawable/correo"
+        android:ems="10"
+        android:hint="CORREO"
+        android:inputType="textEmailAddress"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/freckle_face"
+        app:layout_constraintBottom_toTopOf="@+id/contraseña"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomUser" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleLogo"
+        android:layout_width="396dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/logo"
+        app:civ_border_color="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/contraseña"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="29dp"
+        android:drawableLeft="@drawable/contrasena"
+        android:ems="10"
+        android:hint="CONTRASEÑA"
+        android:inputType="textPassword"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/freckle_face"
+        app:layout_constraintBottom_toTopOf="@+id/btnregistrarse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correo" />
+
+    <Button
+        android:id="@+id/btnregistrarse"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/logindark"
+        android:text="REGISTRARSE"
+        android:textColor="#B71C1C"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/freckle_face"
+        app:layout_constraintBottom_toTopOf="@+id/loginregistrarse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contraseña" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="189dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginregistrarse" />
+
+    <TextView
+        android:id="@+id/loginregistrarse"
+        android:layout_width="229dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:text="Ya estas registrado?"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:fontFamily="@font/freckle_face"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnregistrarse" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
