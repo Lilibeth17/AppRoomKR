@@ -14,26 +14,26 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/idtema"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="20dp"
                 android:text="TextView"
                 android:textAlignment="viewStart"
-                android:textSize="24sp"
+                android:textSize="36sp"
                 android:textStyle="italic" />
 
-            <MultiAutoCompleteTextView
-                android:id="@+id/multiAutoCompleteTextView"
-                android:layout_width="374dp"
-                android:layout_height="103dp"
-                android:layout_gravity="center"
-                android:layout_margin="20dp"
-                android:textAlignment="viewStart" />
+            <TextView
+                android:id="@+id/idcomenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/freckle_face"
+                android:text="TextView"
+                android:textSize="30sp" />
 
             <RatingBar
-                android:id="@+id/ratingBar2"
+                android:id="@+id/ratingcoment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

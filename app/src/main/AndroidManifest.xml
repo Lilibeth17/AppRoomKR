@@ -14,7 +14,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity_Rellenar_Reserva"></activity>
+        <activity android:name=".Vercomentarios"></activity>
+        <activity android:name=".ComentarioAdd" />
+        <activity android:name=".Activity_Rellenar_Reserva" />
         <activity android:name=".Activity_Datos_Reserva" />
         <activity android:name=".ActivityScroolScape" />
         <activity android:name=".ActivityPublico" />

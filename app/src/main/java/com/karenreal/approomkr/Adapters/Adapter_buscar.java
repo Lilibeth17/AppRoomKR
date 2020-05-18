@@ -64,11 +64,10 @@ public class Adapter_buscar extends RecyclerView.Adapter<Adapter_buscar.Holder> 
             imagen.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent= new Intent(context, ActivityScroolScape.class);
+                    Intent intent = new Intent(context, ActivityScroolScape.class);
                     context.startActivity(intent);
                 }
             });
-
+        }
         }
     }
-}

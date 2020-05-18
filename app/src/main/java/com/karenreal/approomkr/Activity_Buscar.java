@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ListView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -37,8 +38,6 @@ public class Activity_Buscar extends AppCompatActivity {
     private Context context= Activity_Buscar.this;
     private Adapter_buscar adapter_buscar;
     private GridLayoutManager layoutManager;
-    private Button regalo;
-    private CircleImageView imagen;
 
 
 
@@ -53,9 +52,6 @@ public class Activity_Buscar extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
         reference= FirebaseDatabase.getInstance().getReference("Escapes");
         storageReference= FirebaseStorage.getInstance().getReference();
-        regalo= findViewById(R.id.boton_regalo);
-
-        imagen= findViewById(R.id.imageid);
 
         lista= new ArrayList<>();
         adapter_buscar= new Adapter_buscar(this,lista);

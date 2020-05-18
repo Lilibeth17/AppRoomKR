@@ -7,6 +7,7 @@
     android:background="@android:color/holo_red_dark">
 
     <ScrollView
+        android:id="@+id/scrollscape"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
@@ -73,12 +74,12 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
+                    android:drawableLeft="@drawable/persona"
                     android:fontFamily="@font/freckle_face"
                     android:text="TextView"
                     android:textAlignment="center"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
-                    android:drawableLeft="@drawable/persona"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/idtiempo"
@@ -86,12 +87,12 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
+                    android:drawableLeft="@drawable/tiempo"
                     android:fontFamily="@font/freckle_face"
                     android:text="TextView"
                     android:textAlignment="center"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
-                    android:drawableLeft="@drawable/tiempo"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/idprecio"
@@ -99,12 +100,12 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
+                    android:drawableRight="@drawable/euro"
                     android:fontFamily="@font/freckle_face"
                     android:text="TextView"
                     android:textAlignment="center"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
-                    android:drawableRight="@drawable/euro"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -165,22 +166,88 @@
                     android:textSize="36sp"
                     android:textStyle="bold|italic" />
 
-                <androidx.recyclerview.widget.RecyclerView
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="561dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnpromocion"
+                    android:layout_width="221dp"
+                    android:layout_height="67dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@font/freckle_face"
+                    android:text="PROMOCIONES"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnquienessomos"
+                    android:layout_width="221dp"
+                    android:layout_height="73dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@font/freckle_face"
+                    android:text="QUIENES SOMOS"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView32"
                     android:layout_width="match_parent"
-                    android:layout_height="643dp">
+                    android:layout_height="67dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/freckle_face"
+                    android:text="DIRECCIÓN"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="36sp" />
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="743dp"
-                        app:cardBackgroundColor="@color/colorAccent">
+                <TextView
+                    android:id="@+id/txtlugares"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:drawableLeft="@drawable/lugar"
+                    android:fontFamily="@font/freckle_face"
+                    android:text="TextView"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24sp"
+                    android:textStyle="italic" />
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical" />
-                    </androidx.cardview.widget.CardView>
-                </androidx.recyclerview.widget.RecyclerView>
+                <TextView
+                    android:id="@+id/txtcorreoes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:drawableLeft="@drawable/correo"
+                    android:fontFamily="@font/freckle_face"
+                    android:text="TextView"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24sp"
+                    android:textStyle="italic" />
 
+                <TextView
+                    android:id="@+id/txttelefonoes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:drawableLeft="@drawable/telefono"
+                    android:fontFamily="@font/freckle_face"
+                    android:text="TextView"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24sp"
+                    android:textStyle="italic" />
             </LinearLayout>
 
             <LinearLayout
@@ -190,7 +257,8 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="@color/colorAccent">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -201,6 +269,8 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_margin="20dp"
+                            android:background="@color/colorWhite"
                             android:orientation="vertical">
 
                             <TextView
@@ -216,7 +286,7 @@
                                 android:textStyle="bold|italic" />
 
                             <EditText
-                                android:id="@+id/editText"
+                                android:id="@+id/txttemacoment"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="10dp"
@@ -226,15 +296,19 @@
                                 android:inputType="textPersonName"
                                 android:textSize="24sp" />
 
-                            <MultiAutoCompleteTextView
-                                android:layout_width="561dp"
-                                android:layout_height="191dp"
+                            <EditText
+                                android:id="@+id/txtcomentario"
+                                android:layout_width="match_parent"
+                                android:layout_height="65dp"
+                                android:ems="10"
                                 android:fontFamily="@font/freckle_face"
-                                android:hint="Agrega tu comentario"
-                                android:textSize="24sp" />
+                                android:hint="COMENTARIO"
+                                android:inputType="textPersonName"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/colorAccent" />
 
                             <RatingBar
-                                android:id="@+id/ratingBar"
+                                android:id="@+id/ratingBarcoment"
                                 android:layout_width="250dp"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="50dp"
@@ -242,7 +316,7 @@
                                 android:layout_marginTop="40dp" />
 
                             <Button
-                                android:id="@+id/button10"
+                                android:id="@+id/btnaddcoment"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_margin="30dp"
@@ -258,6 +332,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <ListView
+                    android:id="@+id/listviewcomentarios"
                     android:layout_width="match_parent"
                     android:layout_height="637dp"
                     android:layout_margin="20dp" />
