@@ -5,6 +5,8 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class EscapeRellenar {
     private String imageView;
     private String lugarid;
@@ -20,7 +22,18 @@ public class EscapeRellenar {
     private float ratingBar;
     private String idtitulo;
 
+    private ArrayList<Comentarios> comentarios;
+
+    public ArrayList<Comentarios> getComentarios() {
+        return comentarios;
+    }
+
+    public void setComentarios(ArrayList<Comentarios> comentarios) {
+        this.comentarios = comentarios;
+    }
+
     public EscapeRellenar() {
+        comentarios = new ArrayList<>();
     }
 
     public EscapeRellenar(String imageView, String lugarid, String idpersonas, String idtiempo, String idprecio, String idtipo, String iddificultad, String idedad, String txtlugar, String txttelefo, String txtcorreo, float ratingBar, String idtitulo) {

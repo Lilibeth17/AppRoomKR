@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Parcelable;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -47,6 +48,13 @@ public class ActivityScroolScape extends AppCompatActivity {
     private ArrayList<Comentarios> listacomentarios;
     private static int ADDCOMENTARIO =1;
 
+    /**
+     * Completar con todos los campos
+     */
+    TextView idTitulo;
+
+    private EscapeRellenar escapeRellenar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,33 +64,38 @@ public class ActivityScroolScape extends AppCompatActivity {
         listViewcoment= findViewById(R.id.listviewcomentarios);
         scrollView= findViewById(R.id.scrollscape);
 
-        escapeRellenars= new ArrayList<>();
-        listacomentarios= new ArrayList<>();
+        /**
+         * Completar con todos los campos
+         */
+        idTitulo= findViewById(R.id.idtitulo);
 
-        reference= FirebaseDatabase.getInstance().getReference("ListaEscape");
-        storage= FirebaseStorage.getInstance().getReference();
-        adapter_escape= new Adapter_Escape(this, escapeRellenars);
-
-
-        adapter_comentarios= new Adapter_Comentarios(this, R.layout.fila_comentarios, listacomentarios);
-        listViewcoment.setAdapter(adapter_comentarios);
-
-        listViewcoment.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        int id = getIntent().getExtras().getInt("ID");
+        reference= FirebaseDatabase.getInstance().getReference("ListaEscape").child(String.valueOf(id));
+        reference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Comentarios comentarios= (Comentarios) adapterView.getAdapter().getItem(i) ;
-                Intent intent= new Intent(ActivityScroolScape.this, Comentarios.class);
-                Bundle bundle= new Bundle();
-                bundle.putParcelable("comentarios", (Parcelable) comentarios);
-                intent.putExtras(bundle);
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                GenericTypeIndicator<EscapeRellenar> gt = new GenericTypeIndicator<EscapeRellenar>() {};
+                escapeRellenar = dataSnapshot.getValue(gt);
+                if (escapeRellenar != null){
+                    idTitulo.setText(escapeRellenar.getIdtipo());
+                    Log.e("NULL","NO Es null");
 
-                startActivity(intent);
+                    /**
+                     * Completar con todos los campos
+                     */
+                }
+                else
+                {
+                    Log.e("NULL","Es null");
+                }
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
             }
         });
-        init();
-
-
-
     }
 
     @Override

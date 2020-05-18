@@ -1,4 +1,7 @@
 package com.karenreal.approomkr.Models;
+
+import java.util.ArrayList;
+
 public class Escape {
     private String nombre;
     private String imagenid;
@@ -6,16 +9,6 @@ public class Escape {
     private String lugarid;
 
 
-    public Escape() {
-    }
-
-    public Escape(String nombre, String imagenid, String tipoid, String lugarid) {
-        this.nombre = nombre;
-        this.imagenid = imagenid;
-        this.tipoid = tipoid;
-        this.lugarid= lugarid;
-
-    }
 
     public String getNombre() {
         return nombre;

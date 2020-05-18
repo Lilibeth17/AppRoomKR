@@ -2,6 +2,7 @@ package com.karenreal.approomkr.Adapters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,12 +37,23 @@ public class Adapter_buscar extends RecyclerView.Adapter<Adapter_buscar.Holder> 
         return new Holder(view);
     }
     @Override
-    public void onBindViewHolder(@NonNull Holder holder, int position) {
+    public void onBindViewHolder(@NonNull Holder holder, final int position) {
         holder.nombre.setText(listaadapter.get(position).getNombre());
         holder.tipoid.setText(listaadapter.get(position).getTipoid());
         holder.lugarid.setText(listaadapter.get(position).getLugarid());
 
         Picasso.get().load(listaadapter.get(position).getImagenid()).into(holder.imagen);
+
+        holder.imagen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, ActivityScroolScape.class);
+                Bundle bundle = new Bundle();
+                bundle.putInt("ID", position);
+                intent.putExtras(bundle);
+                context.startActivity(intent);
+            }
+        });
     }
     @Override
     public int getItemCount() {
@@ -61,13 +73,7 @@ public class Adapter_buscar extends RecyclerView.Adapter<Adapter_buscar.Holder> 
             lugarid= itemview.findViewById(R.id.lugarid);
 
 
-            imagen.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(context, ActivityScroolScape.class);
-                    context.startActivity(intent);
-                }
-            });
+
         }
         }
     }
