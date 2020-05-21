@@ -1,13 +1,6 @@
 package com.karenreal.approomkr;
-
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.ListView;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -23,23 +16,17 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.karenreal.approomkr.Adapters.Adapter_buscar;
 import com.karenreal.approomkr.Models.Escape;
-
 import java.util.ArrayList;
-
-import de.hdodenhof.circleimageview.CircleImageView;
-
 public class Activity_Buscar extends AppCompatActivity {
 
-  private   RecyclerView recyclerView;
-  private DatabaseReference reference;
+    private   RecyclerView recyclerView;
+    private DatabaseReference reference;
     private StorageReference storageReference;
 
     private ArrayList<Escape> lista;
     private Context context= Activity_Buscar.this;
     private Adapter_buscar adapter_buscar;
     private GridLayoutManager layoutManager;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,11 +46,6 @@ public class Activity_Buscar extends AppCompatActivity {
         init();
 
     }
-
-
-
-
-
     private void init() {
         Query query= reference;
         query.addListenerForSingleValueEvent(new ValueEventListener() {

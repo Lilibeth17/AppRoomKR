@@ -5,9 +5,12 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 public class EscapeRellenar {
     private String imageView;
-    private String lugarid;
+    private String lugarid, idinfo;
      private String idpersonas;
     private String       idtiempo;
     private String       idprecio;
@@ -17,13 +20,28 @@ public class EscapeRellenar {
     private String       txtlugar;
     private String       txttelefo;
     private String      txtcorreo;
-    private float ratingBar;
     private String idtitulo;
 
-    public EscapeRellenar() {
+
+
+    private ArrayList<Comentarios> listac;
+    private ArrayList<Salas> listaSalas;
+
+
+    public ArrayList<Comentarios> getListac() {
+        return listac;
     }
 
-    public EscapeRellenar(String imageView, String lugarid, String idpersonas, String idtiempo, String idprecio, String idtipo, String iddificultad, String idedad, String txtlugar, String txttelefo, String txtcorreo, float ratingBar, String idtitulo) {
+    public void setListac(ArrayList<Comentarios> listac) {
+        this.listac = listac;
+    }
+
+    public EscapeRellenar() {
+        listac = new ArrayList<>();
+        listaSalas = new ArrayList<>();
+    }
+
+    public EscapeRellenar(String imageView, String lugarid, String idpersonas, String idtiempo, String idprecio, String idtipo, String iddificultad, String idedad, String txtlugar, String txttelefo, String txtcorreo,String idinfo, String idtitulo) {
         this.imageView = imageView;
         this.lugarid = lugarid;
         this.idpersonas = idpersonas;
@@ -35,8 +53,16 @@ public class EscapeRellenar {
         this.txtlugar = txtlugar;
         this.txttelefo = txttelefo;
         this.txtcorreo = txtcorreo;
-        this.ratingBar = ratingBar;
         this.idtitulo = idtitulo;
+        this.idinfo= idinfo;
+    }
+
+    public String getIdinfo() {
+        return idinfo;
+    }
+
+    public void setIdinfo(String idinfo) {
+        this.idinfo = idinfo;
     }
 
     public String getImageView() {
@@ -128,24 +154,20 @@ public class EscapeRellenar {
     }
 
 
-
-
-    public float getRatingBar() {
-        return ratingBar;
-    }
-
-
-
-    public void setRatingBar(float ratingBar) {
-        this.ratingBar = ratingBar;
-    }
-
     public String getIdtitulo() {
         return idtitulo;
     }
 
     public void setIdtitulo(String idtitulo) {
         this.idtitulo = idtitulo;
+    }
+
+    public ArrayList<Salas> getListaSalas() {
+        return listaSalas;
+    }
+
+    public void setListaSalas(ArrayList<Salas> listaSalas) {
+        this.listaSalas = listaSalas;
     }
 }
 

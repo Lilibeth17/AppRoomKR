@@ -17,11 +17,9 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.karenreal.approomkr.fragments.Fragment_bono_regalo;
 import com.karenreal.approomkr.fragments.Fragment_compartir;
-import com.karenreal.approomkr.fragments.Fragment_contacto;
 import com.karenreal.approomkr.fragments.Fragment_principal;
 import com.karenreal.approomkr.fragments.Fragment_promociones;
 import com.karenreal.approomkr.fragments.Fragment_quienes_somos;
-import com.karenreal.approomkr.fragments.Fragment_reservas;
 
 public class ActivityMenu extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     DrawerLayout drawerLayout;
@@ -97,10 +95,7 @@ public class ActivityMenu extends AppCompatActivity implements NavigationView.On
                 fragmentTransaction.commit();
                 break;
             case R.id.contacto:
-                fragmentManager = getSupportFragmentManager();
-                fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.container, new Fragment_contacto());
-                fragmentTransaction.commit();
+                startActivity(new Intent(this, Actividad_Contacto.class));
                 break;
             case R.id.compartir:
                 fragmentManager = getSupportFragmentManager();

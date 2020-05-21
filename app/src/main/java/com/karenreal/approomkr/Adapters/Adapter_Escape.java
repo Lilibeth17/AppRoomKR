@@ -11,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.karenreal.approomkr.Models.Comentarios;
 import com.karenreal.approomkr.Models.EscapeRellenar;
 import com.karenreal.approomkr.R;
 import com.squareup.picasso.Picasso;
@@ -21,16 +22,20 @@ public class Adapter_Escape extends RecyclerView.Adapter<Adapter_Escape.Holder> 
 
     private Context context;
     private ArrayList<EscapeRellenar>listaadapterescape;
+    private ArrayList<Comentarios> listacoemntarios;
 
-    public Adapter_Escape(Context context, ArrayList<EscapeRellenar> listaadapterescape) {
+    public Adapter_Escape(Context context, ArrayList<EscapeRellenar> listaadapterescape, ArrayList<Comentarios> listasc) {
         this.context = context;
         this.listaadapterescape = listaadapterescape;
+        this.listacoemntarios= listasc;
+
     }
 
     @NonNull
     @Override
     public Holder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_scrool_scape, null);
+
         return new Holder(view);
     }
 

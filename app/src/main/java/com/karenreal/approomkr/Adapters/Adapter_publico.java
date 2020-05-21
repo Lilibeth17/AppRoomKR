@@ -45,7 +45,6 @@ public class Adapter_publico extends RecyclerView.Adapter<Adapter_publico.Holder
         return listadapterpublic.size();
     }
 
-
     public class Holder extends RecyclerView.ViewHolder{
         private TextView tipo;
         private ImageView pubimg;
@@ -57,5 +56,4 @@ public class Adapter_publico extends RecyclerView.Adapter<Adapter_publico.Holder
 
         }
     }
-
 }

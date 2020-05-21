@@ -34,11 +34,17 @@
                 android:layout_height="match_parent"
                 app:cardBackgroundColor="@color/colorAccent">
 
-                <ImageView
-                    android:id="@+id/imgescape"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="300dp"
-                    app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgescape"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+                </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
@@ -331,12 +337,12 @@
 
                 </androidx.cardview.widget.CardView>
 
-                <ListView
-                    android:id="@+id/listviewcomentarios"
-                    android:layout_width="match_parent"
-                    android:layout_height="637dp"
-                    android:layout_margin="20dp" />
             </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclercomentario"
+                android:layout_width="match_parent"
+                android:layout_height="556dp" />
 
         </LinearLayout>
     </ScrollView>

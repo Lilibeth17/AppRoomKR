@@ -1,6 +1,6 @@
 package com.karenreal.approomkr.Models;
 
-import android.widget.RatingBar;
+
 
 public class Comentarios {
 
@@ -16,6 +16,7 @@ public class Comentarios {
         this.comentario = comentario;
         this.ratingBar = ratingBar;
     }
+
 
     public String getTemacoment() {
         return temacoment;
@@ -40,4 +41,6 @@ public class Comentarios {
     public void setRatingBar(float ratingBar) {
         this.ratingBar = ratingBar;
     }
+
+
 }

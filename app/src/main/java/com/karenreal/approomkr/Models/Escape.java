@@ -1,9 +1,10 @@
 package com.karenreal.approomkr.Models;
-public class Escape {
+public class Escape  {
     private String nombre;
     private String imagenid;
     private String tipoid;
     private String lugarid;
+
 
 
     public Escape() {
